@@ -1,0 +1,52 @@
+.hero{
+    height: calc(100vh - 80px);
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.wrapper{
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+}
+
+.textContainer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 0 2rem; */
+    gap: 1rem;
+}
+
+.textContainer h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.textContainer h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.75px;
+}
+
+.textContainer h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+
+}
+
+.imgContainer{
+    position: absolute;
+    max-width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    margin-top: -100px;
+}
+
