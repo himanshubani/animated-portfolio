@@ -1,0 +1,32 @@
+.about{
+    max-width: 1366px;
+    height: calc(100vh - 80px); 
+    margin: auto;
+    padding: 50px;
+}
+
+.about-heading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 50px auto 100px auto;
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.about-textWrapper{
+    width: 80%;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}

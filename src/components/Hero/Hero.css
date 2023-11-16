@@ -1,18 +1,26 @@
 .hero{
     height: calc(100vh - 80px);
-    /* position: relative; */
+    position: relative;
     overflow: hidden;
 }
 
 .wrapper{
+    width: 80%;
     max-width: 1366px;
     height: 100%;
     margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrapper-content{
+    width: fit-content;
+    margin-top: -90px;
 }
 
 .textContainer{
     height: 100%;
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,7 +32,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 4rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .textContainer h2{
@@ -42,11 +50,18 @@
 }
 
 .imgContainer{
-    position: absolute;
-    max-width: 50%;
+    position: relative;
+    width: 50%;
     height: 100%;
-    top: 0;
-    right: 0;
-    margin-top: -100px;
+    
+}
+
+.imgContainer img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    /* z-index: -1; */
+    /* top: -80px; */
+    right: -80px;
 }
 

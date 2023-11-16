@@ -1,3 +1,22 @@
+::-webkit-scrollbar{
+  width: 0.5rem;
+
+}
+
+::-webkit-scrollbar-track{
+  background: hsl(268, 61%, 71.95% );
+}
+
+::-webkit-scrollbar-thumb{
+  /* background: hsl(266, 41%, 7%); */
+  border: .25em solid hsl(267, 48%, 56%);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: hsl(268, 42%, 20%);
+}
+
 /* makes sizing simpler */
 
 *,
@@ -45,6 +64,19 @@ a {
 }
 
 section{
-  height: 100vh;
+  /* height: 100vh; */
   scroll-snap-align: center;
+  /* border-bottom: #000000 1px solid; */
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  height: 4px;
+  background: hsl(267, 48%, 56%);
+  transform-origin: 0%;
+  border-radius: 100px;
 }

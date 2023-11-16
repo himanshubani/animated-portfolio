@@ -11,7 +11,7 @@ export default function Navbar() {
         </div>
         <div className="navbar_right">
           <div className="navbar_item">
-            <a href="#intro" className="navbar_link">
+            <a href="/" className="navbar_link">
               Home
             </a>
           </div>

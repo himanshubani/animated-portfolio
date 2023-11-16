@@ -1,0 +1,7 @@
+.contact{
+    
+    max-width: 1366px;
+    height: calc(100vh - 80px); 
+    margin: auto;
+    padding: 50px;
+}
