@@ -1,62 +1,66 @@
 import "./About.css";
 import { motion } from "framer-motion";
 
+const variants = {
+  initial: {
+      opacity: 0,
+      y: 100,
+  },
+  animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+          duration: 1,
+          ease: [0, 0.71, 0.2, 1.01],
+          staggerChildren: 0.2,
+      },
+  },
+}
+
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" >
       <div className="container">
-        <div className="about-container">
+        <motion.div className="about-container" variants={variants}
+        initial='initial' whileInView='animate'>
 
       
-        <div className="about-textWrapper">
-          <div className="about-heading">
+        <motion.div className="about-textWrapper">
+          <motion.div className="about-heading">
             <h1 id="i1">About Me</h1>
-          </div>
-          <p>Hi, I'm a 3rd year computer science undergrad at MAIT.</p>
+          </motion.div>
+          <motion.p variants={variants}>Hi, I'm a 3rd year computer science undergrad at MAIT.</motion.p>
 
-          <p>
+          <motion.p variants={variants}>
             A <span className="profession">Developer in making . . .</span>
-          </p>
+          </motion.p>
 
-          <p>
+          <motion.p variants={variants}>
             I love <span className="profession">problem solving</span>
-          </p>
+          </motion.p>
 
-          <p>
+          <motion.p variants={variants}>
             I love showcasing my front-end skills because the possibilities are
             endless.
-          </p>
+          </motion.p>
 
-          <p>
+          <motion.p variants={variants}>
             I also have knowledge of
             <span> Web3, Cryptography and Blockchain</span>
-          </p>
+          </motion.p>
 
-          <p>
+          <motion.p variants={variants}>
             Currently I'm learning Framer Motion, which is an awesome frontend
             animation library
-          </p>
-        </div>
-        <div className="about-img-container">
-          <motion.img
-            className="about-img"
-            initial={{ opacity: 0, scale: 0.4 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 1,
-              ease: [0, 0.71, 0.2, 1.01],
-              scale: {
-                type: "spring",
-                damping: 10,
-                stiffness: 75,
-                restDelta: 0.001
-              }
-            }}
+          </motion.p>
+        </motion.div>
+        <motion.div variants={variants} className="about-img-container">
+          <img
             src="https://shivambhadani.netlify.app/static/media/avatar.5852f40fbb38aa284829fa3fb7722225.svg"
             alt=""
           />
-        </div>
-        </div>
+        </motion.div>
+        </motion.div>
       </div>
     </div>
   );
