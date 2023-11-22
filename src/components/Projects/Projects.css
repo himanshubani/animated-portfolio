@@ -53,11 +53,11 @@
     gap: 20px;
 }
 
-.textContainer h2{
+/* .textContainer h2{
     font-size: 45px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
-}
+} */
 
 .textContainer p{
     font-size: 25px;
@@ -77,10 +77,29 @@
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     transition: all 0.3s ease;
-
+    position: relative;
+    z-index: 1;
 }
 
-.wrapper{
+.demo-button::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.demo-button:hover::after{
+    transform: scaleX(1);
+}
+
+.container .wrapper{
     max-width: 1366px;
     margin: auto;
     height: 100%;

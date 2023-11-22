@@ -35,6 +35,19 @@ const Hero = () => {
             </motion.h1>
             <h3>a MERN Stack Developer</h3>
           </motion.div>
+          <div className="resume">
+            <a href="">
+              <span>Resume</span>
+            </a>
+          </div>
+          <div className="links-container">
+            <a id="github" href="https://github.com/himanshubani">
+              <img  src="/github.svg" alt="" />
+            </a>
+            <a id="linkedin" href="https://www.linkedin.com/in/himanshu-bani-8757aa173/">
+              <img src="/linkedin.svg" alt="" />
+            </a>
+          </div>
         </div>
         <div className="imgContainer">
           <img

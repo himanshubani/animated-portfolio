@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const variants = {
   initial: {
       opacity: 0,
-      y: 400,
+      y: 200,
   },
   animate: {
       opacity: 1,
